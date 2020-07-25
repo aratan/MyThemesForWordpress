@@ -31,25 +31,13 @@
 
                 <!--paginacion-->
                 <div class="card-body">
+                     <!-- Llamamos a codigo extra -->
                     <?php get_template_part('template-parts/content', 'paginacion')?>
                 </div>
             </div>
 
             <!--aside-->
-            <div class="col-lg-3">
-                <div class="card-body">
-                    <h4>Publicidad</h4>
-                    <hr>
-                    <!-- metemos imagenes y las clases de bootstrap -->
-                    <?php 
-                        if ( has_post_thumbnail() ) {
-                            the_post_thumbnail('post-thumbnails', array(
-                                'class' => 'img-fluid mb-3') );
-                        }
-                    ?>
-                    <!-- <img src="/img/camiseta.png" alt="camiseta" class="img-fluid"> -->
-                </div>
-            </div>
+            <?php get_sidebar(); ?>
         </class>
       </div>
     </main>
