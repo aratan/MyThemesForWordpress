@@ -37,7 +37,14 @@
                 <div class="card-body">
                     <h4>Publicidad</h4>
                     <hr>
-                    <img src="/img/camiseta.png" alt="camiseta" class="img-fluid">
+                    <!-- metemos imagenes y las clases de bootstrap -->
+                    <?php 
+                        if ( has_post_thumbnail() ) {
+                            the_post_thumbnail('post-thumbnails', array(
+                                'class' => 'img-fluid mb-3') );
+                        }
+                    ?>
+                    <!-- <img src="/img/camiseta.png" alt="camiseta" class="img-fluid"> -->
                 </div>
             </div>
         </class>
