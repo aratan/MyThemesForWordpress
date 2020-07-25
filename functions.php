@@ -26,7 +26,7 @@ function Tema1_widgets(){
     'id'            => 'widgets-derecha',
     'name'          => __( 'Widgets Derecha' ),
     'description'   => __( 'Arrastralo.' ),
-    'before_widget' => '<div class="card-body">',
+    'before_widget' => '<div class="card-body vic_ar">',
     'after_widget'  => '</div>',
     'before_title'  => '<h4>',
     'after_title'   => '</h4><hr>',
