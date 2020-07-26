@@ -17,6 +17,14 @@
                  
                         <h2><?php the_title(); ?></h2>
                         </a>
+                        <!-- metemos imagenes y las clases de bootstrap -->
+                        <?php 
+                            if ( has_post_thumbnail() ) {
+                                the_post_thumbnail('post-thumbnails', array(
+                                    'class' => 'img-fluid mb-3') );
+                            }
+                        ?>
+                        <!-- <img src="/img/camiseta.png" alt="camiseta" class="img-fluid"> -->
                         <p class="small mb-0"><?php the_time('F j, Y'); ?></p>
                         <p class="small mg-0">Autor: <?php the_author(); ?></p>
                         <p class="small ">Categorias: <?php the_category('/') ?> Etiquetas: <?php the_tags('', '/', '')?></p>
@@ -33,20 +41,9 @@
             </div>
 
             <!--aside-->
-            <div class="col-lg-3">
-                <div class="card-body">
-                    <h4>Publicidad</h4>
-                    <hr>
-                    <!-- metemos imagenes y las clases de bootstrap -->
-                    <?php 
-                        if ( has_post_thumbnail() ) {
-                            the_post_thumbnail('post-thumbnails', array(
-                                'class' => 'img-fluid mb-3') );
-                        }
-                    ?>
-                    <!-- <img src="/img/camiseta.png" alt="camiseta" class="img-fluid"> -->
-                </div>
-            </div>
+             <?php get_sidebar(); ?>
+            <!-- aside -->
+            
         </class>
       </div>
     </main>

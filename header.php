@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Mi Tema WordPress</title>
-    <link rel="shortcut icon" href="https://crowdestor.com/assets/public/dist/images/favicon.png" type="image/png"/>
+    <!--<link rel="shortcut icon" href="https://crowdestor.com/assets/public/dist/images/favicon.png" type="image/png"/>-->
     
     <!--TODO: https://developer.wordpress.org/themes/basics/including-css-javascript/-->
     <?php wp_head(); ?>
