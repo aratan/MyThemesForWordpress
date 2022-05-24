@@ -28,10 +28,10 @@ function empresa_lista_clases(){ ?>
                 <div class="card-body">
                     <?php the_post_thumbnail(150,150); ?>
                     <p class="card-text"><?php the_excerpt() ?></p>
-                    <a href="<?php the_permalink();?>" class="btn btn-primary"><?php the_title();?></a>
+                    <a href="<?php the_permalink();?>" class="btn btn-primary"> <?php the_title();?> </a>
                 </div>
                 <div class="card-footer text-muted">
-                    Días: <?php the_field('dias_clase');?>
+                    <a href="#" > Días: <?php the_field('dias_clase');?> </a>
                 </div>
             </div>
 
