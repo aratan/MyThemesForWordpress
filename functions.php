@@ -1,4 +1,7 @@
 <?php
+/* consultas reutilizables y personalizadas*/
+require get_template_directory() . '/inc/queries.php';
+
 /* Este fichero sirve para añadir tu propio codigo al final */
 
 function Tema1_agregar_css_js() {
@@ -21,7 +24,7 @@ if ( function_exists( 'add_theme_support' ) ) {
  
 /*  tamaños de imagen adicionales
     elimine la siguiente línea si no necesita tamaños de imagen adicionales */
-      add_image_size( 'category-thumb', 300, 9999 ); 
+      add_image_size( 'category-thumb', 300, 999 ); 
 /*  300 pixels wide (and unlimited height) */
 }
 
@@ -104,5 +107,7 @@ function dcms_change_embebed_youtube( $content ){
 
 /* Navegacion /menús */
 register_nav_menus( array(
-  'menu_principal' => __('Menu_Principal', 'BlogLoibra')
+  'menu_principal' => __('Menu_Principal', 'BlogLoibra'),
+  'menu_secundario' => __('Menu_Secundario', 'BlogLoibra'),
+  'menu_social' => __('Menu_Social', 'BlogLoibra')
 ) );

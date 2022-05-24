@@ -18,40 +18,88 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /*https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/ */
 
 * {
-/*Pasar de px a rem Alt+Z*/
-    margin:0;
+    /*Pasar de px a rem Alt+Z*/
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: rgb(224, 227, 230);
 
 }
-#logo{
-    height:35px ;
+
+#logo {
+    height: 35px;
     width: 35px;
 }
-.screen-reader-text{
-    display: none; /*quitamos el texto buscar del busxador*/
+
+.screen-reader-text {
+    display: none;
+    /*quitamos el texto buscar del busxador*/
 }
 
 /* calendar widget */
-.widget_calendar {float: left;}
-#wp-calendar {width: 100%; }
-#wp-calendar caption { text-align: right; color: #333; font-size: 12px; margin-top: 10px; margin-bottom: 15px; }
-#wp-calendar thead { font-size: 10px; }
-#wp-calendar thead th { padding-bottom: 10px; }
-#wp-calendar tbody { color: #aaa; }
-#wp-calendar tbody td { background: #f5f5f5; border: 1px solid #fff; text-align: center; padding:8px;}
-#wp-calendar tbody td:hover { background: #fff; }
-#wp-calendar tbody .pad { background: none; }
-#wp-calendar tfoot #next { font-size: 10px; text-transform: uppercase; text-align: right; }
-#wp-calendar tfoot #prev { font-size: 10px; text-transform: uppercase; padding-top: 10px; }
+.widget_calendar {
+    float: left;
+}
 
-.rojo{
+#wp-calendar {
+    width: 100%;
+}
+
+#wp-calendar caption {
+    text-align: right;
+    color: #333;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#wp-calendar thead {
+    font-size: 10px;
+}
+
+#wp-calendar thead th {
+    padding-bottom: 10px;
+}
+
+#wp-calendar tbody {
+    color: #aaa;
+}
+
+#wp-calendar tbody td {
+    background: #f5f5f5;
+    border: 1px solid #fff;
+    text-align: center;
+    padding: 8px;
+}
+
+#wp-calendar tbody td:hover {
+    background: #fff;
+}
+
+#wp-calendar tbody .pad {
+    background: none;
+}
+
+#wp-calendar tfoot #next {
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+#wp-calendar tfoot #prev {
+    font-size: 10px;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+.rojo {
     background-color: red;
 }
-.azul{
+
+.azul {
     background-color: blue;
 }
 
@@ -88,9 +136,11 @@ body{
     list-style: none;
     display: inline-block;
 }
+
 li {
     margin-right: 1rem;
 }
+
 li:last-of-type {
     margin-right: 0;
 }
@@ -130,17 +180,18 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color:#fff;
+    color: #fff;
 }
 
 
 
 /**/
-.center{
+.center {
     text-align: center;
     margin-left: - 1rem;
 }
-.espacio{
+
+.espacio {
     margin-top: 1rem;
     margin-left: 1rem;
 }

@@ -17,9 +17,5 @@
 </div>
       
 
-        
-
-
-
 <?php get_footer(); ?>
 <!-- page php-->

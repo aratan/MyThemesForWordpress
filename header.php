@@ -51,9 +51,5 @@
       'class' => 'img-fluid') );
       }
   ?>
-  <div class="centrado">
-    <h2><?php the_title(); ?></h2>
-    
-    <p><?php the_excerpt(); ?></p>
-  </div>
+
 </div>
