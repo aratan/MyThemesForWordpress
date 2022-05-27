@@ -1,8 +1,8 @@
-<!-- entradas /post de wordpress -->
-
+<!-- entradas /detalle post de wordpress -->
+<!--Si se ve  mal cambia a un tamaño de foto más grande -->
 <?php get_header(); ?>
     <class class="row">
-        <div class="col-lg-9 col-md-6">
+        <div class="col-lg-6 col-md-6">
 
                 <!-- Loop post -->
                 <?php  if ( have_posts() ) : 
@@ -13,17 +13,12 @@
                         <div class="card-body">
                         <!-- ruta de entrada -->
                  
-                        <h2><?php the_title(); ?></h2>
+                        <h1><?php the_title(); ?></h1>
                         <p><?php the_content(); ?></p>
                         
 
                         <!-- metemos imagenes y las clases de bootstrap -->
-                        <?php 
-                            if ( has_post_thumbnail() ) {
-                                the_post_thumbnail('post-thumbnails', array(
-                                    'class' => 'img-fluid') );
-                            }
-                        ?>
+                       
                 
                         <p class="small mb-0"><?php the_time('F j, Y'); ?></p>
                         <p class="small mg-0">Autor: <?php the_author(); ?></p>
@@ -32,10 +27,16 @@
                         
                         <!-- leer post -->
                         
-                       
+                       <a href="<?php the_permalink(); ?>" class="btn btn-primary">
+                    <?php _e('Más info...','lang'); ?>
+                    </a>
                     </div>
-                    <!-- Fin Card Body -->
-                    <?php endwhile; endif;  ?>
+            <!-- Fin Card Body -->
+                    <?php endwhile; else : ?>
+            <h1> <?php _e('No hay post disponibles','lang'); ?></h1>
+            <?php get_search_form()?>
+            <?php endif;  ?>
+
                 <!-- fin del loop -->
 
             </div>

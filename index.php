@@ -46,7 +46,7 @@
                     </a>
                 </div>
                 <!-- Fin Card Body -->
-           
+        <!-- sino encuentra post saca buscador y traduce -->   
                 <?php endwhile; else : ?>
             <h1> <?php _e('No hay post disponibles','lang'); ?></h1>
             <?php get_search_form()?>

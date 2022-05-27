@@ -1,6 +1,6 @@
 <!-- Aside se suele usar para publicidad o cesta de compras -->
 
-    <div class="card-body">
+    <div class="card-body col-lg-6">
             <!--<h4>Widgets</h4>-->
             <hr>
         <!-- Imagenes y las clases de bootstrap -->
