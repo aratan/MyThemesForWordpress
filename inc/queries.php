@@ -25,8 +25,8 @@ function empresa_lista_clases(){ ?>
                 <div class="card-header">
                     <h3><?php the_title();?> </h3>
                 </div>
-                <div class="card-body">
-                    <?php the_post_thumbnail(150,150); ?>
+                <div class="card-body " >
+                    <?php the_post_thumbnail(150,150); ?> 
                     <p class="card-text"><?php the_excerpt() ?></p>
                     <a href="<?php the_permalink();?>" class="btn btn-primary"> <?php the_title();?> </a>
                 </div>

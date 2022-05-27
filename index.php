@@ -41,10 +41,17 @@
 
                     <!-- btn link -->
                     
-                    <a href="<?php the_permalink(); ?>" class="btn btn-primary">Más info...</a>
+                    <a href="<?php the_permalink(); ?>" class="btn btn-primary">
+                    <?php _e('Más info...','lang'); ?>
+                    </a>
                 </div>
                 <!-- Fin Card Body -->
-            <?php endwhile; endif;  ?>
+           
+                <?php endwhile; else : ?>
+            <h1> <?php _e('No hay post disponibles','lang'); ?></h1>
+            <?php get_search_form()?>
+            <?php endif;  ?>
+
             <!-- fin del loop -->
 
             <!--paginacion-->
