@@ -76,9 +76,7 @@
     <!-- Section: Text -->
     <section class="mb-4">
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
-        repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
-        eum harum corrupti dicta, aliquam sequi voluptate quas.
+        Lorem ipsum dolor voluptate quas.
       </p>
     </section>
     <!-- Section: Text -->
@@ -92,13 +90,10 @@
         <div class="col-lg-12 col-md-6 mb-4 mb-md-0">
           <h5 class="text-uppercase">Links</h5>
 
-          <div class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="navbar navbar-dark bg-dark">
   <div class="container">
   
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
+    
    
       <?php wp_nav_menu(array(  
       'theme_location' => 'menu_secundario',

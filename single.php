@@ -37,8 +37,10 @@
             <?php get_search_form()?>
             <?php endif;  ?>
 
-                <!-- fin del loop -->
+            <!-- fin del loop -->
 
+            <!-- comentarios -->
+            <?php comments_template(); ?>
             </div>
 
             <!--aside-->

@@ -46,7 +46,6 @@ add_action('widgets_init','Tema1_widgets');
 add_filter( 'the_title', 'dcms_filtro_titulo' );
 
 function dcms_filtro_titulo( $titulo ) {
-  print_r($post_object);
   $titulo = str_replace('Hello', 'Hola', $titulo);
     return $titulo;
 }
