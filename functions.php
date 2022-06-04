@@ -28,17 +28,28 @@ if ( function_exists( 'add_theme_support' ) ) {
 /*  300 pixels wide (and unlimited height) */
 }
 
- /* Añadir la opcion de widget para Aside SideBar*/
+ /* Añadir la opcion de widget para Aside SideBar widgets*/
 function Tema1_widgets(){
   register_sidebar(array(
     'id'            => 'widgets-derecha',
-    'name'          => __( 'Widgets Derecha' ),
+    'name'          => __( 'Widgets Derecha widget' ),
     'description'   => __( 'Arrastralo.' ),
     'before_widget' => '<div class="card-body vic_ar">',
     'after_widget'  => '</div>',
     'before_title'  => '<h4>',
     'after_title'   => '</h4><hr>',
   ));
+
+   register_sidebar(array(
+    'id'            => 'widgets-derecha_X',
+    'name'          => __( 'Widgets Derecha_X' ),
+    'description'   => __( 'Arrastralo.' ),
+    'before_widget' => '<div class="card-body vic_ar widgetX">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h4>',
+    'after_title'   => '</h4><hr>',
+  ));
+
 }
 add_action('widgets_init','Tema1_widgets');
 
@@ -110,3 +121,49 @@ register_nav_menus( array(
   'menu_secundario' => __('Menu_Secundario', 'BlogLoibra'),
   'menu_social' => __('Menu_Social', 'BlogLoibra')
 ) );
+
+/**/
+class My_Widget extends WP_Widget {
+
+	/**
+	 * Sets up the widgets name etc
+	 */
+	public function __construct() {
+		$widget_ops = array( 
+			'classname' => 'my_widget',
+			'description' => 'My Widget is awesome',
+		);
+		parent::__construct( 'my_widget', 'My Widget', $widget_ops );
+	}
+
+	/**
+	 * Outputs the content of the widget
+	 *
+	 * @param array $args
+	 * @param array $instance
+	 */
+	public function widget( $args, $instance ) {
+		// outputs the content of the widget
+	}
+
+	/**
+	 * Outputs the options form on admin
+	 *
+	 * @param array $instance The widget options
+	 */
+	public function form( $instance ) {
+		// outputs the options form on admin
+	}
+
+	/**
+	 * Processing widget options on save
+	 *
+	 * @param array $new_instance The new options
+	 * @param array $old_instance The previous options
+	 *
+	 * @return array
+	 */
+	public function update( $new_instance, $old_instance ) {
+		// processes widget options to be saved
+	}
+}

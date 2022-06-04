@@ -18,7 +18,7 @@
                         
 
                         <!-- metemos imagenes y las clases de bootstrap -->
-                       
+
                 
                         <p class="small mb-0"><?php the_time('F j, Y'); ?></p>
                         <p class="small mg-0">Autor: <?php the_author(); ?></p>
@@ -33,21 +33,23 @@
                     </div>
             <!-- Fin Card Body -->
                     <?php endwhile; else : ?>
-            <h1> <?php _e('No hay post disponibles','lang'); ?></h1>
+            <h1> 
+                <!--traduce-->
+                <?php _e('No hay post disponibles','lang'); ?>
+            </h1>
+            <!--añade un buscador-->
             <?php get_search_form()?>
             <?php endif;  ?>
-
             <!-- fin del loop -->
-
-            <!-- comentarios -->
-            <?php comments_template(); ?>
-            </div>
+        </div>
 
             <!--aside-->
              <?php get_sidebar(); ?>
             <!-- aside -->
             
-        </class>
+        </div>
       </div>
+        <!-- comentarios -->
+        <?php comments_template(); ?>
     </main>
     <?php get_footer(); ?>

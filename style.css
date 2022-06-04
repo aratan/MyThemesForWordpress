@@ -1,9 +1,9 @@
 /*
-Theme Name: seventy six
-Theme URI: https://studio.emesal.org/
+Theme Name: Loibra
+Theme URI: https://github.com/aratan/
 Author: victor.arbiol@gmail.com
-Author URI: https://studio.emesal.org/
-Description: Our default theme for 2020 is designed to take this topic is basic and flexible, we have not put restrictions.
+Author URI: https: //github.com/aratan/
+Description: Our default theme for 2022 is designed to take this topic is basic and flexible, we have not put restrictions.
 Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
 Version: 1.0
 Requires at least: 5.0
@@ -193,4 +193,16 @@ a {
 .espacio {
     margin-top: 1rem;
     margin-left: 1rem;
+}
+.alcentro{
+    background-color: rgb(33, 34, 34);
+    text-align: center;
+
+    margin:auto;
+}
+.widget{
+background-color: rgb(230, 6, 6);        
+}
+.widgetX {
+    background-color: rgb(10, 6, 230);
 }

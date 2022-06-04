@@ -1,6 +1,12 @@
 
     <li class="card gradient">
-        <?php the_post_thumbnail(150,150); ?>
+        <!-- Imagenes y las clases de bootstrap -->
+            <?php 
+                if ( has_post_thumbnail() ) {
+                    the_post_thumbnail('post-thumbnails', array(
+                        'class' => 'img-fluid mb-3') );
+                }
+            ?>
 
         <?php the_category(); ?>
 

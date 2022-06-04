@@ -1,3 +1,4 @@
+<!-- clases queries.php-->
 <?php
 function empresa_lista_clases(){ ?>
     
@@ -26,7 +27,15 @@ function empresa_lista_clases(){ ?>
                     <h3><?php the_title();?> </h3>
                 </div>
                 <div class="card-body " >
-                    <?php the_post_thumbnail(150,150); ?> 
+
+            <!-- Imagenes y las clases de bootstrap -->
+            <?php 
+                if ( has_post_thumbnail() ) {
+                    the_post_thumbnail('post-thumbnails', array(
+                        'class' => 'img-fluid mb-3') );
+                }
+            ?>
+               
                     <p class="card-text"><?php the_excerpt() ?></p>
                     <a href="<?php the_permalink();?>" class="btn btn-primary"> <?php the_title();?> </a>
                 </div>

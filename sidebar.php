@@ -17,6 +17,12 @@
             <?php else : ?>
                 <!-- Time to add some widgets! -->
             <?php endif; ?>
+
+            <?php if ( is_active_sidebar( 'widgets-derecha_x' ) ) : ?>
+            <?php dynamic_sidebar( 'widgets-derecha_x' ); ?>
+            <?php else : ?>
+                <!-- Time to add some widgets! -->
+            <?php endif; ?>
     </div>
     
 </div>
